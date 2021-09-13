@@ -1,0 +1,36 @@
+.some-class {
+    color: blue;
+}
+
+.cool {
+    color: blue;
+}
+   
+@media screen and (max-width: 600px) {
+    .cool {
+        color: red;
+    }
+}
+
+
+body {
+    background-color: lightgreen;
+  }
+  
+.color-text {
+    color: pink;
+}
+  
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .color-text {
+        color: black;
+    }
+
+    #someId {
+
+    }
+}

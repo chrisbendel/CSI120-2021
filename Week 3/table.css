@@ -1,0 +1,62 @@
+tr, td, th {
+    border: 5px solid pink;
+    padding: 15px 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.small-text {
+    font-size: 8px;
+}
+
+.student {
+    color: firebrick;
+    font-size: 50px;
+    background-color: lightsteelblue;
+}
+
+/* thelink.com */
+#winner {
+    text-align: center;
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    font-weight: 700em;
+    font-size: 80px;
+}
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(-360deg); }
+}
+@keyframes depth {
+    0% { text-shadow: 0 0 black; }
+    25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+    50% { text-shadow: 0 0 black; }
+    75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+    100% { text-shadow: 0 0 black; }
+}
+
+
+.inner {
+    text-align: center;
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    font-weight: 700em;
+    font-size: 80px;
+}
+@keyframes spin {
+    from { transform: rotateY(180deg); }
+    to { transform: rotateY(-180deg); }
+}
+@keyframes depth {
+    0% { text-shadow: 0 0 black; }
+    25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+    50% { text-shadow: 0 0 black; }
+    75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+    100% { text-shadow: 0 0 black; }
+}

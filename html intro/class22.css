@@ -17,7 +17,14 @@
 }
 
 p {
+    color: pink;
+}
 
+.not-pink {
+    color: orange;
+    font-size: 26px;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div {
@@ -26,6 +33,14 @@ div {
 
 h2 {
     
+}
+
+body {
+
+}
+
+#main {
+
 }
 
 .header {

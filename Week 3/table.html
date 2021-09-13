@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Table Page</title>
+        <link rel="stylesheet" href="table.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+              <th>Person 1</th>
+              <th>Person 2</th>
+              <th>Person 3</th>
+            </tr>
+            <tr>
+              <td id="winner">
+                  Emil
+              </td>
+              <td>
+                  <div>
+                      <p>The Element Name</p>
+                      <p class="small-text">EL</p>
+                  </div>
+              </td>
+              <td>Linus</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>14</td>
+              <td>10</td>
+            </tr>
+            <tr>
+                <td class="student">Logan</td>
+                <td class="student">Harrison</td>
+                <td class="student">Andy</td>
+            </tr>
+          </table>
+          <hr>
+          <table>
+              <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Length</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Dunkirk</td>
+                      <td>War</td>
+                      <td>3 hours</td>
+                  </tr>
+                  <tr>
+                    <td>All quiet on the western front</td>
+                    <td>War/Drama</td>
+                    <td>2 hours</td>
+                </tr>
+                <tr>
+                    <td>Bee movie</td>
+                    <td>Bees</td>
+                    <td>Lifetime</td>
+                </tr>
+              </tbody>
+          </table>
+
+          <script>
+            window.addEventListener('load', (event) => {
+                console.log('page is fully loaded');
+                let x = 5;
+                let y = 10;
+                x = 7;
+                console.log(x + y);
+
+
+                const element = document.getElementById("winner");
+                console.log(element);
+
+                let table = "<table>";
+                for (let i = 0; i < 5; i++) {
+                    table += "<tr><td class='inner'>test</td></tr>"
+                }
+                table += "</table>";
+
+                element.innerHTML = table;
+            });
+          </script>
+    </body>
+</html>
