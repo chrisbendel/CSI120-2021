@@ -1,11 +1,13 @@
 // C++
 // int i = 0;
 // float x = 1.9;
+// string s = "hello world";
 
 // JS
 let i = 0;
 const x = 1.9;
 const word = "test";
+const dogBreeds = ["greyhound", "terrier", "collie"];
 
 let doSomething = () => {
     let y = 5;
@@ -35,12 +37,12 @@ bar[2] // "test"
 
 
 let myName = "Chris";
-
+let myLastName = "Bendel";
 let s1 = "a string don't do it";
 let s2 = 'a string';
 // This is the best
-let s3 = `a string ${myName}`;
-let s4 = "a string" + " " + myName;
+let s3 = `My name is ${myName} ${myLastName}`;
+let s4 = "My name is" + " " + myName + " " + myLastName;
 
 let isTired = true;
 let isHappy = false;
@@ -94,12 +96,14 @@ let num2 = "1";
 num1 == num2; // true
 num1 === num2; // true
 
-if (num == num2) {
+if (num1 == num2) {
     console.log('same');
-} else if (!!false) {
+} else if (num1 >= num2) {
     console.log('false');
-} else if (!!true) {
+} else if (num1 <= num2) {
     console.log('true');
+} else if (" ") {
+    // true;
 } else {
     console.log('wtf');
 }
@@ -115,9 +119,9 @@ for (let i = 0; i < 10; i++) {
 }
 
 if (5 <= 7) {
-
+    // do something here
 } else if (10 >= 15) {
-
+    // never true
 }
 
 let someFunction = (arg1) => {
@@ -127,7 +131,6 @@ let someFunction = (arg1) => {
 let someFunction1 = function(arg1) {
     console.log('in the function');
 };
-
 
 let fruits = ["apple", "banana", "peach", "orange"];
 for (let i = 0; i < fruits.length; i++) {
@@ -142,7 +145,12 @@ fruits.forEach((fruit) => {
 let printFruit = (fruit) => {
     console.log(fruit);
 }
+
 fruits.forEach(printFruit);
+
+fruits.forEach(fruit => {
+    printFruit(fruit);
+});
 
 fruits.forEach(function(fruit) {
     console.log(fruit);
@@ -166,3 +174,25 @@ for (let i = 0; i < fruits.length; i++) {
         return true;
     }
 }
+
+let teacher = {
+    firstName: "Chris",
+    lastName: "Bendel",
+    sayHello: () => { console.log('Hello') },
+    address: {
+        city: "Colchester",
+        state: "Vermont"
+    },
+    dogs: ["Luna", "Tela", "Lucky"]
+};
+
+teacher.address.city;
+teacher.dogs.forEach((dog) => {
+    console.log(dog);
+});
+
+teacher.firstName;
+const theKey = "firstName";
+teacher[theKey];
+
+teacher.lastName;
